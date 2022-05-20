@@ -1,0 +1,146 @@
+//IT21204166 Thisera K.G
+
+//user
+
+#include<iostream>
+#include”User.h”
+Class User
+{
+ Private:
+	 char fname[50];
+	 char lname[]50;
+	 int user_id;
+	 char password[20];
+	 schar NIC_no[12];
+	 string Dob;
+	 char Email[50];
+	 int Age;
+	 char Mobile_num[10];
+	 Appointment * app[size];
+	 Booking * book[size];
+	 Payment * pay[size];
+ 
+ public:
+	 User();
+	 User(char ufname[], char ulname[], char psword[], char 
+	 NIC[], string udob, char uemail[], int uage, char umobile[]);
+	 char getName();
+	 string getDOB();
+	 char getMobile_num();
+	 char getEmail();
+	 int getAge();
+	 char getPassword();
+	 void Register();
+	 void searchanappointment();
+	 void Makeanappointment();
+	 void Updateuserdetails();
+	 void Searchlab();
+	 void Booklab();
+	 void Checklabreports();
+	 void Makepayment();
+};
+
+//Lab assistant
+
+#include<iostream>
+#include”Assistant.h”
+Class Assistant: 
+{
+ private:
+	 char ASS_name[20];
+	 char ASS_id[5];
+	 char Report_type;
+	 string ASS_dob;
+	 
+	 time Time;
+	 string Days;
+ public:
+	 Assistant();
+	 Assistant(char name, char Id, char AReport_type, string DOB, time 
+	 A_time, char A_day);
+	 char getName();
+	 char getReport_type();
+	 string getDOB();
+	 
+	 time getTime();
+	 string getDate();
+};
+
+//user implimentation
+#include<iostream>
+#include”User.h”
+#include<cstring>
+Using namespace std;
+User::User(){
+	 Strcpy(fname, “ “);
+	 Strcpy(lname, “ “);
+	 user_id = 0;
+	 strcpy(password,” “);
+	 strcpy(NIC_no,” “);
+	 strcpy(Dob, “ “);
+	 strcpy(Email, “ “);
+	 Age = 0;
+	 Strcpy(Mobile_num,” “);
+ }
+User::User(char ufname[], char ulname[], char psword[], char NIC[], char udob[], char 
+uemail[], int uage, char umobile[]){
+	 Strcpy(fname,ufname);
+	 Strcpy(lname,ulname);
+	 strcpy(password,psword);
+	 strcpy(NIC_no,NIC);
+	 strcpy(Dob, udob);
+	 strcpy(Email, uemail);
+	 Age = uage;
+	 Strcpy(Mobile_num,umobile)
+}
+
+//Lab assistant implimentation
+
+#include<iostream>
+#include”Assistant.h”
+#include<cstring>
+using namespace std;
+Assistant::Assistant(){
+ 
+	 Strcpy(ASS_name,” “);
+	 Strcpy(ASS_id ,” “);
+	 Strcpy(Report_type,” “);
+	 strcpy(ASS_dob,” “);
+	 
+	 Time = “ “;
+	 Days = “ “;
+}
+Assistant::Assistant(char name, char Id, char AReport_type, char DOB, time 
+A_time, char A_day){
+ 
+	 Strcpy(ASS_id,Id);
+	 Strcpy(ASS_name, name);
+	 Strcpy( Report_type ,AReport_type);
+	 Strcpy(ASS_dob, DOB);
+	 
+	 Time = A_time;
+	 Days = A_day;
+}
+
+//main program
+#include<iostream>
+#include”User.h”
+#include”Assistant.h”
+#include”Appointment.h”
+#include”Booking.h”
+#include”Lab test.h”
+#include”Payment.h”
+#include<cstring>
+Using namespace std;
+Int main(){
+ 
+	 User u1;
+	 Appointment Ap1;
+	 Lab test LB1;
+	 Booking Bk1;
+	 Assistant ASS1;
+	 Payment Pay1;
+	 
+ return 0;
+}
+
