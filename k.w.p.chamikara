@@ -1,0 +1,72 @@
+//it21237386 k.w.p.chamikara
+
+// Appointment
+#include<iostream>
+#include”Appointment.h”
+Class Appointment
+{
+ Private:
+	 Int App_id;
+	 time Time;
+	 date Date;
+	 User * us1;
+ 
+ public:
+	 Appointment(); 
+	 Appointment(int Appid, date Adate, time Atime);
+	 Void editAppointment();
+	 Void cancelAppointment();
+	 Void displayAppointment();
+};
+
+//lab  test
+
+#include<iostream>
+#include”Lab_test.h”
+Class Lab_test
+{
+ Private:
+	 Int Lab_id;
+	 Double Lab_fee;
+	 time Time;
+	 string Date; 
+ public:
+	 Lab_test();
+	 Lab_test(int Lid, double Lfee);
+	 time getTime();
+	 string getDate();
+	 void cancelLabTest();
+	 void confirmLabTest();
+	 void storeAppointmentdetails();
+};
+
+//appointment
+
+#include”Appointment.h”
+#include<cstring>
+Using namespace std;
+Appointment::Appointment(){
+	 App_id = Appid;
+	 Date = “ ”;
+	 Time = “ “;
+ }
+Appointmnet::Appointment(int Appid , date Adate, time Atime){
+	 Time = Atime;
+	 Date = Adate; 
+}
+//lab report
+
+#include<iostream>
+#include”Lab_test.h”
+#include<cstring>
+Using namespace std;
+Lab_test::Lab_test{
+ 
+	 Lab_id = 0;
+	 Lab_fee = 0;
+ }
+Lab_test::Lab_test(double Lfee){
+	 Lab_id = Lid;
+	 Lab_fee = Lfee;
+}
+
